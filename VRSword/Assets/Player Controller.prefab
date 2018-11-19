@@ -1,19 +1,9 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!4 &7492674720464296699 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4210811135385046553, guid: e767fde4606d53f80b0c5ecdc3a20d97, type: 3}
-  m_PrefabInstance: {fileID: 6743187849080755426}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1894804767102390407 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5178910300416148581, guid: e767fde4606d53f80b0c5ecdc3a20d97, type: 3}
   m_PrefabInstance: {fileID: 6743187849080755426}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &6743187850131080379 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 488160, guid: d9809c5e8418bb047bf2c8ba1d1a2cec, type: 3}
-  m_PrefabInstance: {fileID: 6743187850131175003}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &6742573547903757475
 GameObject:
@@ -92,9 +82,9 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!1 &6743876689920463709 stripped
+--- !u!1 &6742573548855291641 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 1000010178323718, guid: d9809c5e8418bb047bf2c8ba1d1a2cec, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1956530202777762, guid: d9809c5e8418bb047bf2c8ba1d1a2cec, type: 3}
   m_PrefabInstance: {fileID: 6743187850131175003}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &6743187848460806481
@@ -921,11 +911,6 @@ MonoBehaviour:
   m_modelGearVrController: {fileID: 6743876688690958599}
   m_modelOculusGoController: {fileID: 6742573547903757475}
   m_controller: 33554432
---- !u!1 &6742573548855291641 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1956530202777762, guid: d9809c5e8418bb047bf2c8ba1d1a2cec, type: 3}
-  m_PrefabInstance: {fileID: 6743187850131175003}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6743187848987589833
 GameObject:
   m_ObjectHideFlags: 0
@@ -1467,7 +1452,7 @@ GameObject:
   - component: {fileID: 6743187849533530089}
   - component: {fileID: 6743187849533530090}
   m_Layer: 0
-  m_Name: OVRCameraRig 1
+  m_Name: Player Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1934,6 +1919,11 @@ CharacterJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!4 &6743187850131080379 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 488160, guid: d9809c5e8418bb047bf2c8ba1d1a2cec, type: 3}
+  m_PrefabInstance: {fileID: 6743187850131175003}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6743187850328725479
 GameObject:
   m_ObjectHideFlags: 0
@@ -2372,6 +2362,11 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &6743876689920463709 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000010178323718, guid: d9809c5e8418bb047bf2c8ba1d1a2cec, type: 3}
+  m_PrefabInstance: {fileID: 6743187850131175003}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6743876689927987305
 GameObject:
   m_ObjectHideFlags: 0
@@ -2834,6 +2829,11 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!4 &7492674720464296699 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4210811135385046553, guid: e767fde4606d53f80b0c5ecdc3a20d97, type: 3}
+  m_PrefabInstance: {fileID: 6743187849080755426}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6743187849080755426
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2964,6 +2964,14 @@ PrefabInstance:
     - target: {fileID: 4210811135061539371, guid: e767fde4606d53f80b0c5ecdc3a20d97, type: 3}
       propertyPath: m_LocalRotation.w
       value: -0.70682365
+      objectReference: {fileID: 0}
+    - target: {fileID: 4210811133578883397, guid: e767fde4606d53f80b0c5ecdc3a20d97, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 5883578688027125062, guid: e767fde4606d53f80b0c5ecdc3a20d97, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e767fde4606d53f80b0c5ecdc3a20d97, type: 3}
